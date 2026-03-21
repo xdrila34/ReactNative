@@ -2,8 +2,8 @@ import React from "react"
 import {Text, StyleSheet, View, Flatlist} from 'react-native';
 
 const students = [
-    {name: 'Germanuim', surname: 'Morina', age: 30}
-    {name: 'Drilon', surname: 'Latifi', age: 18}
+    {name: 'Germanuim', surname: 'Morina', age: 30},
+    {name: 'Drilon', surname: 'Latifi', age: 18},
     {name: 'Yll', surname: 'Berisha', age: 18}
     
 
