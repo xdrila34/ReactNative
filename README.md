@@ -1,5 +1,6 @@
 npx create-expo-app mobileApp --template
 ---------------------------
+npx expo install react-native-gesture-handler
 npx expo install react-native-web react-dom @expo/metro-runtime
 npm install @expo/ngrok
 npm install @react-navigation/native @react-navigation/stack
