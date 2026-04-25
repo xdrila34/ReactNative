@@ -1,5 +1,5 @@
 import React from "react";
-import {Text, Image, View, StyleSheet} from "react-native"
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Image, useWindowDimensions } from "react-native";
 
 const ProjectScreen = () => {
     return(

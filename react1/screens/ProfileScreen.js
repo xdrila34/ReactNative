@@ -1,5 +1,5 @@
 import React from "react"; 
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Image, useWindowDimensions } from "react-native-web";
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Image, useWindowDimensions } from "react-native";
 
 const ProfileScreen = ({ navigation }) => {
     const { width } = useWindowDimensions();
@@ -21,13 +21,13 @@ const ProfileScreen = ({ navigation }) => {
         {
             id: 3,
             name: "Donart",
-            image: require('../assets/avatar3.jpg'),
+            image: require('../assets/avatar4.jpg'),
             description: "Full-stack developer with experience in React, Node.js, and cloud technologies."
         },
         {
             id: 4,
             name: "Dyll",
-            image: require('../assets/avatar4.jpg'),
+            image: require('../assets/avatar3.jpg'),
             description: "Mobile app developer specializing in React Native and cross-platform development."
         },
         {
