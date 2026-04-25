@@ -5,7 +5,9 @@ const ExersciseScreen = () => {
     let message = 'hi there';
     message = 'prsh prej nameku'
     return(
-        <Text>{message}</Text>
+        <View style={styles.container}>
+            <Text>{message}</Text>
+        </View>
     )
 }
 

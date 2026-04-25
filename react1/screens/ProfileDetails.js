@@ -15,7 +15,7 @@ const ProfileDetails = (props) => {
         </View>
 
         {/* Green button */}
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={props.onHireMePress}>
           <Text style={styles.buttonText}>Hire Me</Text>
         </TouchableOpacity>
 
