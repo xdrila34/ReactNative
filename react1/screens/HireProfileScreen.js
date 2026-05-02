@@ -1,19 +1,62 @@
-import React, { useState } from "react";
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image, Linking, useWindowDimensions } from "react-native";
+import React, { useState, useState, useEffect } from "react";
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image, Linking, useWindowDimensions, Alert, useEffect } from "react-native";
 
 const HireProfileScreen = ({ route }) => {
   const { profile } = route.params;
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
 
+
   const [projects, setProjects] = useState([
-    { id: 1, title: "E-commerce Website", image: require('../assets/avatar1.jpg'), link: "https://example.com/project1" },
-    { id: 2, title: "Mobile App", image: require('../assets/avatar2.jpg'), link: "https://example.com/project2" },
-    { id: 3, title: "Dashboard", image: require('../assets/avatar3.jpg'), link: "https://example.com/project3" },
+    { id: 1, 
+        title: "E-commerce Website", 
+        images:[       
+            require("../assets/avatar1.jpg"),
+            require("../assets/avatar2.jpg"),
+            require("../assets/avatar3.jpg")
+        ], 
+        link: "https://example.com/project1" },
+    
+    { id: 2, 
+        title: "Mobile App", 
+        images:[       
+            require("../assets/avatar1.jpg"),
+            require("../assets/avatar2.jpg"),
+            require("../assets/avatar3.jpg")
+        ],  
+        link: "https://example.com/project2" },
+    { id: 3, 
+        title: "Dashboard", 
+        images:[       
+            require("../assets/avatar1.jpg"),
+            require("../assets/avatar2.jpg"),
+            require("../assets/avatar3.jpg")
+        ],  
+        link: "https://example.com/project3" },
   ]);
+  const [imageIndexes, setImageIndexes] = useState(
+  projects.map(() => 0)
+);
+useEffect(() => {
+  const interval = setInterval(() => {
+    setImageIndexes((prev) =>
+      prev.map((index, i) => {
+        const images = projects[i].images;
+        return (index + 1) % images.length;
+      })
+    );
+  }, 5000);
+
+  return () => clearInterval(interval);
+}, []);
+
 
   const handleProjectPress = (link) => {
     Linking.openURL(link);
+  };
+  const handlePress = () => {
+    Alert.alert(" THE Students Name is ", profile.name);
+    console.log("hello!");
   };
 
   return (
@@ -39,6 +82,9 @@ const HireProfileScreen = ({ route }) => {
                   </TouchableOpacity>
                   <TouchableOpacity style={styles.contactButton}>
                     <Text style={styles.contactButtonText}>LinkedIn</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity onPress={handlePress} style={styles.contactButton}>
+                    <Text style={styles.contactButtonText}>SHOW NAME</Text>
                   </TouchableOpacity>
                 </View>
               </View>
@@ -97,6 +143,9 @@ const HireProfileScreen = ({ route }) => {
                   </TouchableOpacity>
                   <TouchableOpacity style={styles.contactButton}>
                     <Text style={styles.contactButtonText}>LinkedIn</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity onPress={handlePress} style={styles.contactButton}>
+                    <Text style={styles.contactButtonText}>SHOW NAME</Text>
                   </TouchableOpacity>
                 </View>
               </View>
