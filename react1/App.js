@@ -13,6 +13,7 @@ import StudentDetalis from './screens/StudentDetails';
 import ProjectScreen from './screens/ProjectScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import HireProfileScreen from './screens/HireProfileScreen';
+import PostScreen from './screens/PostScreen';
 
 
 const Stack = createStackNavigator();
@@ -21,11 +22,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Menu"
+        initialRouteName="Posts"
         screenOptions={{
           headerTitle: 'Profile App',
         }}
       >
+        <Stack.Screen name="Posts" component={PostScreen} />
         <Stack.Screen name="Students" component={StudentScreen} />
         <Stack.Screen name="Menu" component={MenuScreen} />
         <Stack.Screen name="Hobbies" component={HobbiesScreen} />
