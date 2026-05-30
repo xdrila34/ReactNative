@@ -14,7 +14,8 @@ import ProjectScreen from './screens/ProjectScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import HireProfileScreen from './screens/HireProfileScreen';
 import PostScreen from './screens/PostScreen';
-
+import CountriesScreen from './screens/CountriesScreen';
+import ProductScreen from './screens/ProductScreen'
 
 const Stack = createStackNavigator();
 
@@ -27,6 +28,8 @@ export default function App() {
           headerTitle: 'Profile App',
         }}
       >
+        <Stack.Screen name="Product" component={ProductScreen} />
+        <Stack.Screen name="Countries" component={CountriesScreen} />
         <Stack.Screen name="Posts" component={PostScreen} />
         <Stack.Screen name="Students" component={StudentScreen} />
         <Stack.Screen name="Menu" component={MenuScreen} />

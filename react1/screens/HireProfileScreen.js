@@ -1,5 +1,5 @@
-import React, { useState, useState, useEffect } from "react";
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image, Linking, useWindowDimensions, Alert, useEffect } from "react-native";
+import React, { useEffect, useState } from "react";
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image, Linking, useWindowDimensions, Alert } from "react-native";
 
 const HireProfileScreen = ({ route }) => {
   const { profile } = route.params;

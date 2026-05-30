@@ -1,6 +1,5 @@
 import React from "react";
-import {Text, StyleSheet, View} from 'react-native'
-import { FlatList } from "react-native-web";
+import { FlatList, Text, StyleSheet, View } from 'react-native'
 
 const HobbiesScreen = () => {
     const hobbies = [

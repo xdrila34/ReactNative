@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "country": "United States",
+    "description": "Software engineer with experience in cloud computing and AI applications."
+  },
+  {
+    "id": 2,
+    "name": "Liam Smith",
+    "country": "Canada",
+    "description": "Digital marketing specialist focused on social media campaigns and branding."
+  },
+  {
+    "id": 3,
+    "name": "Sofia Martinez",
+    "country": "Spain",
+    "description": "Graphic designer passionate about modern UI and visual storytelling."
+  },
+  {
+    "id": 4,
+    "name": "Noah Brown",
+    "country": "Australia",
+    "description": "Project manager with expertise in agile workflows and team leadership."
+  },
+  {
+    "id": 5,
+    "name": "Emma Wilson",
+    "country": "United Kingdom",
+    "description": "Content writer specializing in technology and startup ecosystems."
+  },
+  {
+    "id": 6,
+    "name": "Oliver Davis",
+    "country": "Germany",
+    "description": "Data analyst experienced in business intelligence and predictive modeling."
+  },
+  {
+    "id": 7,
+    "name": "Mia Garcia",
+    "country": "Mexico",
+    "description": "UX researcher focused on improving accessibility and user engagement."
+  },
+  {
+    "id": 8,
+    "name": "Ethan Lee",
+    "country": "South Korea",
+    "description": "Mobile app developer creating cross-platform productivity tools."
+  },
+  {
+    "id": 9,
+    "name": "Ava Patel",
+    "country": "India",
+    "description": "Cybersecurity consultant helping organizations secure digital assets."
+  },
+  {
+    "id": 10,
+    "name": "James Anderson",
+    "country": "New Zealand",
+    "description": "Entrepreneur building sustainable solutions for urban transportation."
+  }
+]
