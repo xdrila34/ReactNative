@@ -23,7 +23,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Posts"
+        initialRouteName="Product"
         screenOptions={{
           headerTitle: 'Profile App',
         }}
