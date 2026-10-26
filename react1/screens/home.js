@@ -1,14 +1,18 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
-const Home = () => {
-  return (
-    <View>
+const Home = ({ navigation }) => {
+    return (
+        <View>
+            <Text>Welcome to home screen</Text>
+            <Button
+                title="Go to About Screen"
+                onPress={() => navigation.navigate('About')}
+            />
+        </View>
+    );
+}
 
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({});
+// const styles = StyleSheet.create({})
 
 export default Home;
