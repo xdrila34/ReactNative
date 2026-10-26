@@ -13,3 +13,14 @@ npx expo-doctor
 npm why react-native
 npm dedupe
 npx expo-doctor
+
+
+
+
+#new 
+cd desktop
+npx create-expo-app reactapp --template
+cd reactapp
+npx expo install react-native-web react-dom @expo/metro-runtime
+npm install @react-navigation/native @react-navigation/stack
+npx expo install react-native-screens react-native-safe-area-context
