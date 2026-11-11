@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Intel Core i7-14700K",
+    "description": "High-performance desktop processor with 20 cores, ideal for gaming, streaming, and productivity workloads.",
+    "image": "data/images/1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "AMD Ryzen 7 7800X3D",
+    "description": "Gaming-focused processor featuring 3D V-Cache technology for exceptional gaming performance.",
+    "image": "data/images/2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "NVIDIA GeForce RTX 4080 Super",
+    "description": "Powerful graphics card designed for 4K gaming, ray tracing, and AI-enhanced workloads.",
+    "image": "data/images/3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "AMD Radeon RX 7900 XTX",
+    "description": "High-end graphics card offering outstanding performance for gaming and content creation.",
+    "image": "data/images/4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Corsair Vengeance DDR5 32GB",
+    "description": "32GB DDR5 memory kit delivering high speeds and low latency for modern systems.",
+    "image": "data/images/5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Samsung 990 Pro 2TB",
+    "description": "PCIe 4.0 NVMe SSD with ultra-fast read and write speeds for demanding applications.",
+    "image": "data/images/6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "ASUS ROG Strix B650E-F Gaming WiFi",
+    "description": "Feature-rich AM5 motherboard with PCIe 5.0 support, WiFi 6E, and robust power delivery.",
+    "image": "data/images/7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "MSI MAG Z790 Tomahawk WiFi",
+    "description": "Reliable Intel motherboard with advanced cooling solutions and extensive connectivity options.",
+    "image": "data/images/8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Corsair RM850x",
+    "description": "850W fully modular power supply with 80 Plus Gold efficiency certification.",
+    "image": "data/images/9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Noctua NH-D15",
+    "description": "Premium dual-tower air CPU cooler known for exceptional cooling and low noise levels.",
+    "image": "data/images/10.jpg"
+  }
+]
